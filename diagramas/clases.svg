@@ -1,0 +1,101 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='1060' viewBox='0 0 1200 1060'>
+<defs>
+<marker id='tri' viewBox='0 0 20 20' refX='19' refY='10' markerWidth='18' markerHeight='18' orient='auto' markerUnits='userSpaceOnUse'><path d='M1,1 L19,10 L1,19 Z' fill='white' stroke='#333' stroke-width='1.5'/></marker>
+<marker id='arr' viewBox='0 0 20 20' refX='19' refY='10' markerWidth='14' markerHeight='14' orient='auto' markerUnits='userSpaceOnUse'><path d='M1,2 L19,10 L1,18' fill='none' stroke='#333' stroke-width='2'/></marker>
+<marker id='dia' viewBox='0 0 28 16' refX='1' refY='8' markerWidth='28' markerHeight='16' orient='auto-start-reverse' markerUnits='userSpaceOnUse'><path d='M1,8 L14,1 L27,8 L14,15 Z' fill='#333' stroke='#333'/></marker>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='1180' y='1045' text-anchor='end' font-family='Arial,Helvetica,sans-serif' font-size='12' fill='#666'>SmartLibrary – Diagrama de clases (Bloque 5)</text>
+<rect x='60' y='30' width='300' height='120' fill='#E3F2FD' stroke='#333' stroke-width='1.5'/>
+<text x='210.0' y='52' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='13'>«interface»</text>
+<text x='210.0' y='74' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Notificable</text>
+<line x1='60' y1='88' x2='360' y2='88' stroke='#333'/>
+<line x1='60' y1='119' x2='360' y2='119' stroke='#333'/>
+<text x='70' y='140' font-family='Arial,Helvetica,sans-serif' font-size='13'>+notificar(mensaje: String): void</text>
+<rect x='560' y='30' width='320' height='158' fill='#E8F5E9' stroke='#333' stroke-width='1.5'/>
+<text x='720.0' y='52' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='13'>«abstract»</text>
+<text x='720.0' y='74' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold' font-style='italic'>Usuario</text>
+<line x1='560' y1='88' x2='880' y2='88' stroke='#333'/>
+<text x='570' y='109' font-family='Arial,Helvetica,sans-serif' font-size='13'>- identificacion: String</text>
+<text x='570' y='128' font-family='Arial,Helvetica,sans-serif' font-size='13'>- nombre: String</text>
+<text x='570' y='147' font-family='Arial,Helvetica,sans-serif' font-size='13'>- correo: String</text>
+<line x1='560' y1='157' x2='880' y2='157' stroke='#333'/>
+<text x='570' y='178' font-family='Arial,Helvetica,sans-serif' font-size='13'>+getNombre(): String</text>
+<rect x='300' y='300' width='330' height='117' fill='#E8F5E9' stroke='#333' stroke-width='1.5'/>
+<text x='465.0' y='322' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Estudiante</text>
+<line x1='300' y1='336' x2='630' y2='336' stroke='#333'/>
+<text x='310' y='357' font-family='Arial,Helvetica,sans-serif' font-size='13'>- codigoEstudiantil: String</text>
+<text x='310' y='376' font-family='Arial,Helvetica,sans-serif' font-size='13'>- programaAcademico: String</text>
+<line x1='300' y1='386' x2='630' y2='386' stroke='#333'/>
+<text x='310' y='407' font-family='Arial,Helvetica,sans-serif' font-size='13'>+notificar(mensaje: String): void</text>
+<rect x='800' y='300' width='280' height='117' fill='#E8F5E9' stroke='#333' stroke-width='1.5'/>
+<text x='940.0' y='322' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Bibliotecario</text>
+<line x1='800' y1='336' x2='1080' y2='336' stroke='#333'/>
+<text x='810' y='357' font-family='Arial,Helvetica,sans-serif' font-size='13'>- codigoEmpleado: String</text>
+<text x='810' y='376' font-family='Arial,Helvetica,sans-serif' font-size='13'>- turno: String</text>
+<line x1='800' y1='386' x2='1080' y2='386' stroke='#333'/>
+<rect x='60' y='560' width='380' height='136' fill='#FFF3E0' stroke='#333' stroke-width='1.5'/>
+<text x='250.0' y='582' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Prestamo</text>
+<line x1='60' y1='596' x2='440' y2='596' stroke='#333'/>
+<text x='70' y='617' font-family='Arial,Helvetica,sans-serif' font-size='13'>- fechaPrestamo: LocalDate</text>
+<text x='70' y='636' font-family='Arial,Helvetica,sans-serif' font-size='13'>- fechaPrevistaDevolucion: LocalDate</text>
+<line x1='60' y1='646' x2='440' y2='646' stroke='#333'/>
+<text x='70' y='667' font-family='Arial,Helvetica,sans-serif' font-size='13'>+renovar(nuevaFecha: LocalDate): void</text>
+<text x='70' y='686' font-family='Arial,Helvetica,sans-serif' font-size='13'>+getRenovaciones(): List&lt;Renovacion&gt;</text>
+<rect x='760' y='570' width='280' height='117' fill='#F3E5F5' stroke='#333' stroke-width='1.5'/>
+<text x='900.0' y='592' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Reserva</text>
+<line x1='760' y1='606' x2='1040' y2='606' stroke='#333'/>
+<text x='770' y='627' font-family='Arial,Helvetica,sans-serif' font-size='13'>- fechaReserva: LocalDate</text>
+<text x='770' y='646' font-family='Arial,Helvetica,sans-serif' font-size='13'>- estado: String</text>
+<line x1='760' y1='656' x2='1040' y2='656' stroke='#333'/>
+<rect x='40' y='850' width='320' height='136' fill='#FFF3E0' stroke='#333' stroke-width='1.5'/>
+<text x='200.0' y='872' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Renovacion</text>
+<line x1='40' y1='886' x2='360' y2='886' stroke='#333'/>
+<text x='50' y='907' font-family='Arial,Helvetica,sans-serif' font-size='13'>- fechaRenovacion: LocalDate</text>
+<text x='50' y='926' font-family='Arial,Helvetica,sans-serif' font-size='13'>- fechaAnterior: LocalDate</text>
+<text x='50' y='945' font-family='Arial,Helvetica,sans-serif' font-size='13'>- nuevaFecha: LocalDate</text>
+<line x1='40' y1='955' x2='360' y2='955' stroke='#333'/>
+<rect x='440' y='870' width='250' height='98' fill='#E0F7FA' stroke='#333' stroke-width='1.5'/>
+<text x='565.0' y='892' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Ejemplar</text>
+<line x1='440' y1='906' x2='690' y2='906' stroke='#333'/>
+<text x='450' y='927' font-family='Arial,Helvetica,sans-serif' font-size='13'>- codigoInventario: String</text>
+<line x1='440' y1='937' x2='690' y2='937' stroke='#333'/>
+<rect x='820' y='850' width='340' height='136' fill='#E0F7FA' stroke='#333' stroke-width='1.5'/>
+<text x='990.0' y='872' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='bold'>Libro</text>
+<line x1='820' y1='886' x2='1160' y2='886' stroke='#333'/>
+<text x='830' y='907' font-family='Arial,Helvetica,sans-serif' font-size='13'>- isbn: String</text>
+<text x='830' y='926' font-family='Arial,Helvetica,sans-serif' font-size='13'>- titulo: String</text>
+<text x='830' y='945' font-family='Arial,Helvetica,sans-serif' font-size='13'>- autor: String</text>
+<line x1='820' y1='955' x2='1160' y2='955' stroke='#333'/>
+<text x='830' y='976' font-family='Arial,Helvetica,sans-serif' font-size='13'>+agregarEjemplar(codigo: String): Ejemplar</text>
+<path d='M504.6,300 L504.6,250 L720.0,250' fill='none' stroke='#333' stroke-width='1.5'/>
+<path d='M940.0,300 L940.0,250 L720.0,250 L720.0,190' fill='none' stroke='#333' stroke-width='1.5' marker-end="url(#tri)"/>
+<path d='M366.0,300 L366.0,230 L210.0,230 L210.0,152' fill='none' stroke='#333' stroke-width='1.5' stroke-dasharray="7,5" marker-end="url(#tri)"/>
+<text x='218.0' y='215' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='12' fill='#000' font-style="italic">«realiza»</text>
+<path d='M366.0,417 L366.0,500 L288.0,500 L288.0,559' fill='none' stroke='#333' stroke-width='1.5' marker-end="url(#arr)"/>
+<text x='372.0' y='435' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>1</text>
+<text x='294.0' y='552' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>0..*</text>
+<text x='317.0' y='492' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000' font-style="italic">solicita</text>
+<path d='M564.0,417 L564.0,520 L872.0,520 L872.0,569' fill='none' stroke='#333' stroke-width='1.5' marker-end="url(#arr)"/>
+<text x='570.0' y='435' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>1</text>
+<text x='878.0' y='562' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>0..*</text>
+<text x='738.0' y='512' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000' font-style="italic">realiza</text>
+<path d='M168.0,722 L168.0,850' fill='none' stroke='#333' stroke-width='1.5'/>
+<polygon points='168.0,696 161.0,709 168.0,722 175.0,709' fill='#333' stroke='#333'/>
+<text x='180.0' y='718' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>1</text>
+<text x='174.0' y='842' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>0..*</text>
+<text x='176.0' y='780' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000' font-style="italic">historial</text>
+<path d='M364.0,696 L364.0,820 L565.0,820 L565.0,869' fill='none' stroke='#333' stroke-width='1.5' marker-end="url(#arr)"/>
+<text x='370.0' y='714' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>0..*</text>
+<text x='573.0' y='862' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>1</text>
+<text x='555.0' y='812' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000' font-style="italic">presta</text>
+<path d='M900.0,687 L900.0,800 L956.0,800 L956.0,849' fill='none' stroke='#333' stroke-width='1.5' marker-end="url(#arr)"/>
+<text x='906.0' y='705' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>0..*</text>
+<text x='964.0' y='842' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>1</text>
+<text x='908.0' y='780' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000' font-style="italic">reserva</text>
+<path d='M794,915 L690,915' fill='none' stroke='#333' stroke-width='1.5'/>
+<polygon points='820,915 807,908 794,915 807,922' fill='#333' stroke='#333'/>
+<text x='790' y='908' text-anchor='end' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>1</text>
+<text x='698' y='908' text-anchor='start' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000'>1..*</text>
+<text x='755.0' y='935' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='13' fill='#000' font-style="italic">tiene</text>
+</svg>

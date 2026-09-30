@@ -1,0 +1,16 @@
+=== PRUEBA 1: renovacion valida ===
+Libro: Effective Java | ejemplares: 2
+Prestamo de Santiago Campoverde (atendido por Laura Gomez), ejemplar EJ-0001
+Fecha prevista inicial: 2026-10-08
+[Notificacion -> Santiago Campoverde <santiago@campusucc.edu.co>] Su prestamo fue renovado.
+Nueva fecha prevista: 2026-10-15
+Cantidad de renovaciones: 1
+Historial: [Renovacion[realizada=2026-09-30, anterior=2026-10-08, nueva=2026-10-15]]
+
+=== PRUEBA 2: renovacion invalida (fecha anterior a la vigente) ===
+Rechazada correctamente -> Renovacion invalida: la nueva fecha (2026-10-10) debe ser posterior a la fecha prevista vigente (2026-10-15).
+
+=== PRUEBA 3: renovacion invalida (misma fecha vigente) ===
+Rechazada correctamente -> Renovacion invalida: la nueva fecha (2026-10-15) debe ser posterior a la fecha prevista vigente (2026-10-15).
+
+Estado final: fecha prevista = 2026-10-15, renovaciones = 1
