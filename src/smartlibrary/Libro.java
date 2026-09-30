@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Libro (obra del catalogo). Composicion con Ejemplar (R10):
- * el Libro crea y contiene sus ejemplares; un ejemplar no puede
- * existir sin su libro ni cambiarse a otro libro.
- */
+
 public class Libro {
     private String isbn;
     private String titulo;

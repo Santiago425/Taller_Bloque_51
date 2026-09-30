@@ -2,7 +2,7 @@ F="font-family='Arial,Helvetica,sans-serif'"
 o=[]
 def comp(x,y,w,h,name,classes,fill):
     o.append(f"<rect x='{x}' y='{y}' width='{w}' height='{h}' fill='{fill}' stroke='#333' stroke-width='1.5'/>")
-    # icono de componente UML
+    
     ix,iy=x+w-44,y+12
     o.append(f"<rect x='{ix}' y='{iy}' width='30' height='36' fill='white' stroke='#333'/>")
     o.append(f"<rect x='{ix-7}' y='{iy+7}' width='14' height='7' fill='white' stroke='#333'/>")

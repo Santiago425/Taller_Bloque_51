@@ -1,9 +1,6 @@
 package smartlibrary;
 
-/**
- * Generalizacion (R12). Es abstracta porque en SmartLibrary no existe
- * un usuario "generico": todo usuario es Estudiante o Bibliotecario.
- */
+
 public abstract class Usuario {
     private String identificacion;
     private String nombre;

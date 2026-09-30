@@ -5,10 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Asociacion con Estudiante y con Ejemplar (existen independientemente).
- * Composicion con Renovacion (el prestamo crea y posee su historial).
- */
+
 public class Prestamo {
     private Estudiante estudiante;
     private Ejemplar ejemplar;

@@ -2,11 +2,7 @@ package smartlibrary;
 
 import java.time.LocalDate;
 
-/**
- * Parte del historial de un Prestamo (R11). Composicion: solo el Prestamo
- * la crea (constructor de paquete) y no tiene sentido fuera de el.
- * Inmutable: un registro historico no se modifica.
- */
+
 public class Renovacion {
     private final LocalDate fechaRenovacion;
     private final LocalDate fechaAnterior;

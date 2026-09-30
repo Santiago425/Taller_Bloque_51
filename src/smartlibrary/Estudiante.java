@@ -1,6 +1,6 @@
 package smartlibrary;
 
-/** Estudiante ES-UN Usuario y ademas cumple el contrato Notificable. */
+
 public class Estudiante extends Usuario implements Notificable {
     private String codigoEstudiantil;
     private String programaAcademico;

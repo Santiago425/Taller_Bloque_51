@@ -2,7 +2,7 @@ package smartlibrary;
 
 import java.time.LocalDate;
 
-/** Prueba minima del Bloque 5. */
+
 public class Main {
     public static void main(String[] args) {
         Estudiante estudiante = new Estudiante("1001", "Santiago Campoverde",
